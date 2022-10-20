@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>My LIFF App</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1657577987-l6X8Xn7M" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "แจกฟรี 50.-",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "💎💎 ABK 779 💎💎",
+                "color": "#b00400",
+                "weight": "bold",
+                "align": "center",
+                "margin": "md",
+                "offsetBottom": "sm"
+              }
+            ],
+            "borderColor": "#643b4b",
+            "borderWidth": "semi-bold",
+            "cornerRadius": "xxl",
+            "background": {
+              "type": "linearGradient",
+              "angle": "0deg",
+              "startColor": "#d6a84a",
+              "endColor": "#d6a84a",
+              "centerColor": "#fffba5"
+            },
+            "margin": "md"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://cdn.discordapp.com/attachments/1020140725184253985/1032289360780996711/02-01.jpg",
+                "size": "full"
+              }
+            ],
+            "margin": "lg",
+            "borderWidth": "medium",
+            "cornerRadius": "xl"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "รับเครดิตฟรี",
+                    "align": "center",
+                    "color": "#b00400",
+                    "margin": "xl",
+                    "offsetBottom": "md",
+                    "weight": "bold",
+                    "size": "sm"
+                  }
+                ],
+                "backgroundColor": "#7b19c8",
+                "background": {
+                  "type": "linearGradient",
+                  "angle": "0deg",
+                  "startColor": "#d6a84a",
+                  "endColor": "#d6a84a",
+                  "centerColor": "#fffba5"
+                },
+                "borderWidth": "semi-bold",
+                "cornerRadius": "xxl",
+                "borderColor": "#643b4b",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "https://lin.ee/J9vzHve"
+                }
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "สมัครสมาชิก",
+                    "align": "center",
+                    "color": "#b00400",
+                    "margin": "xl",
+                    "offsetBottom": "md",
+                    "weight": "bold",
+                    "size": "sm"
+                  }
+                ],
+                "backgroundColor": "#7b19c8",
+                "borderWidth": "semi-bold",
+                "cornerRadius": "xxl",
+                "background": {
+                  "type": "linearGradient",
+                  "angle": "0deg",
+                  "startColor": "#d6a84a",
+                  "endColor": "#d6a84a",
+                  "centerColor": "#fffba5"
+                },
+                "borderColor": "#643b4b",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "http://www.autobetkub.com/"
+                }
+              }
+            ],
+            "spacing": "lg",
+            "paddingAll": "sm",
+            "margin": "md"
+          }
+        ]
+      }
+    ],
+    "backgroundColor": "#13032a",
+    "background": {
+      "type": "linearGradient",
+      "angle": "0deg",
+      "startColor": "#13032a",
+      "endColor": "#13032a",
+      "centerColor": "#932bd8"
+    },
+    "borderColor": "#643b4b",
+    "borderWidth": "semi-bold",
+    "cornerRadius": "xl",
+    "paddingAll": "md"
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
